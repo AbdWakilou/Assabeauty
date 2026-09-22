@@ -1,0 +1,21 @@
+# ============================================================
+# CLOUDFLARE PAGES CONFIG — SalonPro
+# ============================================================
+name               = "salonpro"
+compatibility_date = "2024-01-01"
+
+[build]
+  command   = "npm run build"
+  directory = "dist"
+
+# Variables d'env NON sensibles seulement ici
+# Les sensibles → Dashboard Cloudflare Pages > Settings > Env Vars :
+#   FIREBASE_PROJECT_ID
+#   FIREBASE_CLIENT_EMAIL
+#   FIREBASE_PRIVATE_KEY      ← PEM avec \n échappés
+#   FEDAPAY_SECRET_KEY
+#   FEDAPAY_WEBHOOK_SECRET
+#   CALLBACK_URL
+#   ENVIRONMENT               ← "live" en prod
+#   VITE_ADMIN_LOGIN
+#   VITE_ADMIN_PASSWORD
